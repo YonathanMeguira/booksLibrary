@@ -9,3 +9,6 @@ md-input-container{
 #save-btn:hover{
   background-color: crimson;
 }
+#save-btn:disabled{
+  background-color: #999999;
+}

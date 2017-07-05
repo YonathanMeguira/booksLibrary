@@ -17,6 +17,6 @@
 
 </md-dialog-content>
 <md-dialog-actions>
-  <button md-raised-button [md-dialog-close]="book" id="save-btn" >SAVE</button>
+  <button md-raised-button [disabled]="!fieldsNotSet()" [md-dialog-close]="book" id="save-btn" >SAVE</button>
   <button md-raised-button md-dialog-close id="cancel-btn">CANCEL</button>
 </md-dialog-actions>

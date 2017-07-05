@@ -11,7 +11,7 @@ export class AddBookComponent {
   book: Books = new Books;
   constructor(public dialogRef: MdDialogRef<AddBookComponent>) {
   }
-  fieldsNotSet(book: Books){
-    return (book.title && book.author && book.date) !== undefined;
+  fieldsNotSet() {
+    return (this.book.title && this.book.author && this.book.date);
   };
 }
