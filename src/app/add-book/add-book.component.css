@@ -1,0 +1,11 @@
+md-input-container{
+  width: 90%;
+}
+#save-btn{
+  margin-right: 15px;
+  color: white;
+  background-color: dodgerblue;
+}
+#save-btn:hover{
+  background-color: crimson;
+}

@@ -1,0 +1,15 @@
+md-input-container{
+  width: 90% !important;
+}
+#save-btn{
+  background-color: dodgerblue;
+  color: white;
+  margin-right: 15px;
+}
+#save-btn:hover{
+  background-color: darkslateblue;
+}
+#cancel-btn:hover{
+  background-color: crimson;
+  color: white;
+}

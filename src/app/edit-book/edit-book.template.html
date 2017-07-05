@@ -1,0 +1,22 @@
+
+<h2 md-dialog-title style="color: #666">{{bookInstance.data.title}}</h2>
+
+<md-dialog-content layout="column" layout-align="center center">
+
+  <md-input-container>
+    <input mdInput placeholder="Book Title"  type="text" [(ngModel)]="bookInstance.title">
+  </md-input-container>
+
+  <md-input-container>
+    <input mdInput placeholder="Book Author"  type="text" [(ngModel)]="bookInstance.author">
+  </md-input-container>
+
+  <md-input-container>
+    <input mdInput placeholder="Release Date"  type="date" [(ngModel)]="bookInstance.date">
+  </md-input-container>
+
+</md-dialog-content>
+<md-dialog-actions>
+  <button md-raised-button [md-dialog-close]="bookInstance" id="save-btn">SAVE</button>
+  <button md-raised-button md-dialog-close id="cancel-btn">CANCEL</button>
+</md-dialog-actions>

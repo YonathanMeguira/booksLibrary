@@ -1,0 +1,19 @@
+<div layout="column" layout-align="center center" style="height: 100%">
+  <div layout="row" layout-md="column" layout-xs="column" layout-sm="column" layout-align="space-around start">
+    <md-card *ngFor="let book of books">
+      <md-card-header>
+        <md-card-title>{{book.title | titleCase}}</md-card-title>
+        <md-card-subtitle style="color: #666">{{book.author | titleCase}}</md-card-subtitle>
+        <md-card-subtitle style="color: #999">Date: {{book.date}}</md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="{{book.image}}">
+      <md-card-actions>
+        <button md-raised-button (click)="editBook(book, books.indexOf(book))">EDIT</button>
+        <button md-raised-button class="delete-btn" (click)="deleteBook(book)">DELETE</button>
+      </md-card-actions>
+    </md-card>
+  </div>
+</div>
+<div layout="row" layout-align="end end" style="position: fixed; bottom: 10px; right: 10px">
+  <button id="add-btn" md-fab (click)="addBook()">+</button>
+</div>
